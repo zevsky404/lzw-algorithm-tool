@@ -1,0 +1,23 @@
+{
+  "name": "lzw-tool",
+  "version": "1.0.0",
+  "description": "A tool to demonstrate the LZW algorithm compression and decompression",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1",
+    "start": "snowpack dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zevsky404/lzw-algorithm-tool.git"
+  },
+  "author": "zevsky404",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zevsky404/lzw-algorithm-tool/issues"
+  },
+  "homepage": "https://github.com/zevsky404/lzw-algorithm-tool#readme",
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
