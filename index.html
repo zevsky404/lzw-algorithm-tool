@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>LZW Showcase Tool</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="./styles/site.css">
 </head>
-<body>
-
+<body class="h-screen">
+<header class="flex justify-center sticky m-3.5">
+    <h1>LZW ALGORITHM</h1>
+</header>
+<main class="flex justify-center h-full">
+    <div id="container" class="flex flex-col gap-2 border-1 border-gray-400 rounded shadow-md shadow-inner h-5/6 w-2/6 mt-6 p-2.5">
+        <div id="clear-text-input-container" class="m-1.5">
+            <h2>Decompressed Text</h2>
+            <input type="text" class="w-full h-36 border-gray-500 rounded border-2">
+        </div>
+        <div class="flex flex-row gap-2 h-3/6 m-1.5 pb-3">
+            <div id="table-container" class="w-4/6">
+                <h2>Table</h2>
+                <input type="text" class="w-full h-full border-gray-500 rounded border-2">
+            </div>
+            <div id="dictionary-container" class="w-2/6">
+                <h2>Dictionary</h2>
+                <input type="text" class="w-full h-full border-gray-500 rounded border-2">
+            </div>
+        </div>
+        <div id="compressed-text-input-container" class="m-1.5">
+            <h2>Compressed Text</h2>
+            <input type="text" class="w-full h-36 border-gray-500 rounded border-2">
+        </div>
+    </div>
+</main>
 </body>
 </html>
