@@ -5,6 +5,7 @@
     <title>LZW Showcase Tool</title>
     <link rel="stylesheet" href="./styles/output.css">
     <link rel="stylesheet" href="./styles/site.css">
+    <script type="module" src="/scripts/index.js"></script>
 </head>
 <body class="h-screen">
 <header class="flex justify-center sticky m-3.5">
@@ -14,29 +15,37 @@
     <div id="container" class="flex flex-col gap-2 border-gray-400 rounded shadow-md shadow-inner h-5/6 w-2/6 mt-6 p-2.5">
         <div id="clear-text-input-container" class="m-1.5">
             <h2>Decompressed Text</h2>
-            <textarea class="w-full h-36 border-gray-500 rounded border-2"></textarea>
+            <label>
+                <textarea id="decompressed-text" class="w-full h-36 border-gray-500 rounded border-2"></textarea>
+            </label>
         </div>
         <div class="flex flex-row gap-2 h-3/6 m-1.5 pb-3">
             <div id="table-container" class="w-4/6">
                 <h2>Table</h2>
-                <textarea class="w-full h-full border-gray-500 rounded border-2"></textarea>
+                <label>
+                    <textarea id="table" class="w-full h-full border-gray-500 rounded border-2"></textarea>
+                </label>
             </div>
             <div id="dictionary-container" class="w-2/6">
                 <h2>Dictionary</h2>
-                <textarea class="w-full h-full border-gray-500 rounded border-2"></textarea>
+                <label>
+                    <textarea id="dictionary" class="w-full h-full border-gray-500 rounded border-2"></textarea>
+                </label>
             </div>
         </div>
         <div id="compressed-text-input-container" class="m-1.5">
             <h2>Compressed Text</h2>
-            <textarea class="w-full h-36 border-gray-500 rounded border-2"></textarea>
+            <label>
+                <textarea id="compressed-text" class="w-full h-36 border-gray-500 rounded border-2"></textarea>
+            </label>
         </div>
     </div>
-    <div id="button-container" class="h-2.5">
-        <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow-md shadow-inner">
-            Test
+    <div id="button-container" class="ml-2.5 h-2.5">
+        <button id="compress-button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow-md shadow-inner">
+            Compress
         </button>
-        <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow-md shadow-inner">
-            Test
+        <button id="decompress-button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow-md shadow-inner">
+            Decompress
         </button>
     </div>
 </main>
