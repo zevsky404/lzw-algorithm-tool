@@ -7,3 +7,12 @@ h2 {
     font-size: 1em;
     font-weight: bold;
 }
+
+.tabulator-tableholder::-webkit-scrollbar {
+    display: none;
+}
+
+.tabulator-tableholder {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>LZW Showcase Tool</title>
+    <link rel="stylesheet" href="./node_modules/tabulator-tables/dist/css/tabulator_simple.min.css">
     <link rel="stylesheet" href="./styles/output.css">
     <link rel="stylesheet" href="./styles/site.css">
-    <link rel="stylesheet" href="./node_modules/tabulator-tables/dist/css/tabulator_simple.min.css">
     <script type="module" src="/scripts/index.js"></script>
 </head>
 <body class="h-screen">
-<main class="flex flex-col h-full">
+<main class="flex flex-grow flex-col h-full">
     <header class="flex justify-center m-3.5">
         <h1>LZW ALGORITHM</h1>
     </header>
@@ -21,12 +21,12 @@
                     <textarea id="decompressed-text" class="w-full h-36 border-gray-500 rounded border-2"></textarea>
                 </label>
             </div>
-            <div class="flex flex-row gap-2 h-3/6 m-1.5 pb-3">
-                <div id="table-container" class="w-4/6">
+            <div class="flex flex-row gap-2 h-3/6 max-h-3/6 m-1.5 pb-3">
+                <div id="table-container" class="h-full w-4/6">
                     <h2>Table</h2>
                     <div id="table-test"></div>
                 </div>
-                <div id="dictionary-container" class="w-2/6">
+                <div id="dictionary-container" class="h-full w-2/6">
                     <h2>Dictionary</h2>
                     <label>
                         <textarea id="dictionary" class="w-full h-full border-gray-500 rounded border-2"></textarea>
