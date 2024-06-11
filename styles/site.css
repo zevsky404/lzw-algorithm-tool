@@ -16,3 +16,12 @@ h2 {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+#dictionary::-webkit-scrollbar {
+    display: none;
+}
+
+#dictionary {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

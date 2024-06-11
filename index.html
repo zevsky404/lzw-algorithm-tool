@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="./styles/site.css">
     <script type="module" src="/scripts/index.js"></script>
 </head>
-<body class="h-screen">
-<main class="flex flex-grow flex-col h-full">
+<body class="h-screen overflow-hidden">
+<main class="flex flex-col justify-evenly h-full">
     <header class="flex justify-center m-3.5">
         <h1>LZW ALGORITHM</h1>
     </header>
-    <div class="flex justify-center justify-items-start items-center h-full">
-        <div id="container" class="flex flex-col justify-center gap-2 border border-gray-200 rounded shadow-md shadow-inner h-5/6 w-2/6 mt-6 p-2.5">
+    <div class="flex justify-center h-full" style="flex: none">
+        <div id="container" class="flex flex-col justify-center gap-2 border border-gray-200 rounded shadow-md shadow-inner h-4/5 w-2/6 mt-6 p-2.5">
             <div id="clear-text-input-container" class="m-1.5">
                 <h2>Decompressed Text</h2>
                 <label>
                     <textarea id="decompressed-text" class="w-full h-36 border-gray-500 rounded border-2"></textarea>
                 </label>
             </div>
-            <div class="flex flex-row gap-2 h-3/6 max-h-3/6 m-1.5 pb-3">
-                <div id="table-container" class="h-full w-4/6">
+            <div class="flex flex-row gap-2 h-2/6 m-1.5 pb-3" style="flex: none;">
+                <div id="table-container" class="h-full w-4/6" style="flex: none;">
                     <h2>Table</h2>
-                    <div id="table-test"></div>
+                    <div id="table-test" style="flex: none"></div>
                 </div>
-                <div id="dictionary-container" class="h-full w-2/6">
+                <div id="dictionary-container" class="h-full w-2/6" style="flex: none;">
                     <h2>Dictionary</h2>
                     <label>
                         <textarea id="dictionary" class="w-full h-full border-gray-500 rounded border-2"></textarea>
