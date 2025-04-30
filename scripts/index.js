@@ -1,6 +1,3 @@
-import {LwzConverter} from "./classes";
-import {TabulatorFull as Tabulator} from 'tabulator-tables';
-
 function buildTable(data) {
     let table = new Tabulator('#table-test', {
         data: data,
@@ -58,7 +55,3 @@ decompressButton.addEventListener("click", callback => decompress(compressedText
 
 clearAllButton.addEventListener("click", clearAll);
 clearDictButton.addEventListener("click", clearDictionary);
-
-
-
-

@@ -13,7 +13,7 @@ function insertAtIndex(array, index, value) {
     ];
 }
 
-export class LwzConverter {
+window.LwzConverter = class {
     constructor() {
         this.#dictionary = new Map();
         this.#stepCollection = [];
