@@ -129,7 +129,7 @@ window.LwzConverter = class {
 
         // iterates over all letters of the decompressed text
         for (let letter of decompressedText) {
-            currentSymbol = letter;
+            currentSymbol = this.getStringFromDictionary(letter);
             // auxiliary variables for building a step
             const _currentSymbol = currentSymbol;
             const _string = string;
